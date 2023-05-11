@@ -32,5 +32,7 @@ sector_performance = openbb.stocks.ca.screener(similar=sectors,data_type='perfor
 sector_performance = sector_performance.sort_values(by=['Perf Half'],ascending=False)
 print(sector_performance) 
 
+#hotfix-test
+
 
 
