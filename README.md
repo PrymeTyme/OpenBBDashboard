@@ -53,12 +53,10 @@ to quickly scan the S&P500 and its sectors via the select sector spiders and run
 <details closed="closed">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
-    <li><a href="#1-installation">Installation</a></li>
-    <li><a href="#2-contributing">Contributing</a></li>
-    <li><a href="#3-license">License</a></li>
+    <li><a href="#1-installation">Installation of OpenBB</a></li>
+    <li><a href="#2-contributing">Installation of ETF WebApp</a></li>
     <li><a href="#4-disclaimer">Disclaimer</a></li>
     <li><a href="#5-contacts">Contacts</a></li>
-    <li><a href="#6-star-history">Star History</a></li>
     <li><a href="#7-contributors">Contributors</a></li>
   </ol>
 </details>
@@ -85,9 +83,9 @@ If you wish to install the OpenBB Terminal or the OpenBB SDK, please use one of 
 | **ETF screener webapp** &nbsp; &nbsp; &nbsp; &nbsp;                                                                      | **Usage**                                                                    |
 | :----------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
 | [Clone This Repository](https://docs.github.com/de/repositories/creating-and-managing-repositories/cloning-a-repository) | Make a local clone of this repository                                        |
-| [Install Node dependencies]                                                                                              | navigate to the /website directory and `npm install`                         |
-| [Install Server dependencies]                                                                                            | navigate to the /website/server directory and `npm install`                  |
-| [Install Python dependencies]                                                                                            | navigate to the Project directory and `pip install -r requirements-full.txt` |
+| Install Node dependencies                                                                                                | navigate to the /website directory and `npm install`                         |
+| Install Server dependencies                                                                                              | navigate to the /website/server directory and `npm install`                  |
+| Install Python dependencies                                                                                              | navigate to the Project directory and `pip install -r requirements-full.txt` |
 | nbsp;                                                                                                                    |
 
 ### Running this Project locally
