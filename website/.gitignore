@@ -18,3 +18,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#webapp
+
+dist/
+test.py
+myconfig.json
+README.md
