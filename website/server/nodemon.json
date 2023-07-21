@@ -1,7 +1,7 @@
 {
     "watch": [
-        "C:/Users/Sergej/OpenBBTerminal/website/server",
-        "C:/Users/Sergej/OpenBBTerminal/website/src"
+        "YOUR_PATH/OpenBBTerminal/website/server",
+        "YOUR_PATH/OpenBBTerminal/website/src"
         
         
       ],
