@@ -85,8 +85,10 @@ If you wish to install the OpenBB Terminal or the OpenBB SDK, please use one of 
 | [Clone This Repository](https://docs.github.com/de/repositories/creating-and-managing-repositories/cloning-a-repository) | Make a local clone of this repository                                        |
 | Install Node dependencies                                                                                                | navigate to the /website directory and `npm install`                         |
 | Install Server dependencies                                                                                              | navigate to the /website/server directory and `npm install`                  |
-| Install Python dependencies                                                                                              | navigate to the Project directory and `pip install -r requirements-full.txt` |
-| nbsp;                                                                                                                    |
+| Install Python dependencies\*\*                                                                                          | navigate to the Project directory and `pip install -r requirements-full.txt` |
+
+| nbsp;  
+\*\*this is optional!! only needed if you dont have the sdk from openBB |
 
 ### Running this Project locally
 
