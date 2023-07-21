@@ -85,14 +85,20 @@ If you wish to install the OpenBB Terminal or the OpenBB SDK, please use one of 
 | [Clone This Repository](https://docs.github.com/de/repositories/creating-and-managing-repositories/cloning-a-repository) | Make a local clone of this repository                                        |
 | Install Node dependencies                                                                                                | navigate to the /website directory and `npm install`                         |
 | Install Server dependencies                                                                                              | navigate to the /website/server directory and `npm install`                  |
-| Install Python dependencies                                                                                              | navigate to the Project directory and `pip install -r requirements-full.txt` |
-| nbsp;                                                                                                                    |
+| Install Python dependencies++                                                                                            | navigate to the Project directory and `pip install -r requirements-full.txt` |
+| nbsp;  
+++this is optional!! only needed if you dont have the sdk from openBB |
+
+
 
 ### Running this Project locally
 
 - locate the config.json file within the website/server folder and replace the PATHS accordingly to your environemnts and file paths
   for example wherever your openbb python env is located change: `"pythonPath": "PATH_TO_YOUR_PYTHON_ENVOIRNEMENT/obb/python.exe",`
   to `"pythonPath":"C:/ProgramData/Anaconda3/envs/obb/python.exe"`
+
+- locate the nodemon.json file file within the website/server folder and change the PATH to watch aswell
+
 - cd into website/ and run this command: ` npm-run-all -p start-server start` to run the webapp
   this will launch the webapp in production as it utilizes nodemon if you make any changes in the code the server will restart automatically
   if you want to ignore some files you need to locate the nodemon.json file within the server directory and at the file you wish to ignore in the list!

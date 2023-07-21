@@ -1,9 +1,10 @@
 {
     "watch": [
-        "C:/Users/Sergej/OpenBBTerminal/website/server",
-        "C:/Users/Sergej/OpenBBTerminal/website/src"
-        
-        
+
+        "YOUR_PATH/OpenBBTerminal/website/server",
+        "YOUR_PATH/OpenBBTerminal/website/src"
+
+       
       ],
       "ext": "js,json,mjs,jsx,ts,tsx,css,py",
       "ignore":["etf_sector_results.json","test.py","etf_holdings_results.json","news_result.json","overview.json"]
