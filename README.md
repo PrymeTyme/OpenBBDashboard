@@ -25,29 +25,27 @@
 
 <!-- PROJECT LOGO -->
 
-| OpenBB is committed to build the future of investment research by focusing on an open source infrastructure accessible to everyone, everywhere. |
+|This is a project which utilizes the power of the open source project of OpenBB and its SDK. in this case ive build a tool
+to quickly scan the S&P500 and its sectors via the select sector spiders and run a relative strength comparison to filter strong/weak sectors and stocks |
 |:--:|
 | [![openbb.jpg](/images/openbb_gradient.png)](https://openbb.co) |
-| Check our website at [openbb.co](https://openbb.co) |
+| Check their website at [openbb.co](https://openbb.co) |
 
 <br />
 
 <p align="center">
-  <h3 align="center">OpenBB Terminal 🚀</h3>
-  <h4 align="center">Documentation can be found at: https://openbb.co/docs </h4>
-  <p align="center">Click on the GIF below for a DEMO of the terminal.</p>
+  <h3 align="center">ETF Sector/Stocks Relative Strength Comparison Screener 🚀</h3>
+  <h4 align="center"></h4>
+  <p align="center"></p>
 
   <p align="center">
-     <a href="https://www.youtube.com/watch?v=fqGPK8OVHLk" rel="OpenBB Terminal Demo">
-        <img src="images/openbb_terminal_illustration.gif" alt="OpenBB Terminal Illustration" width="100%"/>
+     <a >
+        <img src="images/openbbTest.gif" alt="OpenBB Terminal Illustration" width="100%"/>
      </a>
   </p>
 
   <p align="center">
-    <a href="https://docs.openbb.co/terminal/installation"><strong>≪  GETTING STARTED</strong></a>
-    &nbsp · &nbsp <a href="https://github.com/OpenBB-finance/OpenBBTerminal/tree/master/CONTRIBUTING.md"><strong>CONTRIBUTING</strong></a> &nbsp · &nbsp
-    <a href="https://docs.openbb.co/terminal">
-    <strong>SEE FEATURES »</strong></a>
+    <a href="https://docs.openbb.co/terminal/installation"><strong>≪  OpenBB Installation Guide</strong></a>
   </p>
 </p>
 
@@ -65,49 +63,60 @@
   </ol>
 </details>
 
-## 1. Installation
+## 1. Installation of OpenBB
 
 If you wish to install the OpenBB Terminal or the OpenBB SDK, please use one of the following options:
 
-|**OpenBB Terminal**|**Usage**|
-|:-|:-|
-|[Windows Installer](https://docs.openbb.co/terminal/installation/windows)|Recommended way for Windows if you just want to use the OpenBB Terminal|
-|[MacOS Installer](https://docs.openbb.co/terminal/installation/macos)|Recommended way for MacOS if you just want to use the OpenBB Terminal|
-|[Source](https://docs.openbb.co/terminal/installation/source)|If you wish to contribute to the development of the OpenBB Terminal|
-|[Docker](https://docs.openbb.co/terminal/installation/docker)|An alternative way if you just want to use the OpenBB Terminal|
+| **OpenBB Terminal**                                                       | **Usage**                                                               |
+| :------------------------------------------------------------------------ | :---------------------------------------------------------------------- |
+| [Windows Installer](https://docs.openbb.co/terminal/installation/windows) | Recommended way for Windows if you just want to use the OpenBB Terminal |
+| [MacOS Installer](https://docs.openbb.co/terminal/installation/macos)     | Recommended way for MacOS if you just want to use the OpenBB Terminal   |
+| [Source](https://docs.openbb.co/terminal/installation/source)             | If you wish to contribute to the development of the OpenBB Terminal     |
+| [Docker](https://docs.openbb.co/terminal/installation/docker)             | An alternative way if you just want to use the OpenBB Terminal          |
 
-|**OpenBB SDK** &nbsp; &nbsp; &nbsp; &nbsp; |**Usage**|
-|:-|:-|
-|[PyPI](https://docs.openbb.co/terminal/installation/pypi)|If you wish to use the OpenBB SDK in Python or Jupyter Notebooks|
-|[Source](https://docs.openbb.co/terminal/installation/source)|If you wish to contribute to the development of the OpenBB Terminal|
-nbsp;|
+| **OpenBB SDK** &nbsp; &nbsp; &nbsp; &nbsp;                    | **Usage**                                                           |
+| :------------------------------------------------------------ | :------------------------------------------------------------------ |
+| [PyPI](https://docs.openbb.co/terminal/installation/pypi)     | If you wish to use the OpenBB SDK in Python or Jupyter Notebooks    |
+| [Source](https://docs.openbb.co/terminal/installation/source) | If you wish to contribute to the development of the OpenBB Terminal |
+| nbsp;                                                         |
 
-## 2. Contributing
+## 2. Installation of the ETF Screener Webapp
 
-There are three main ways of contributing to this project. (Hopefully you have starred the project by now ⭐️)
+| **ETF screener webapp** &nbsp; &nbsp; &nbsp; &nbsp;                                                                      | **Usage**                                                                    |
+| :----------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
+| [Clone This Repository](https://docs.github.com/de/repositories/creating-and-managing-repositories/cloning-a-repository) | Make a local clone of this repository                                        |
+| [Install Node dependencies]                                                                                              | navigate to the /website directory and `npm install`                         |
+| [Install Server dependencies]                                                                                            | navigate to the /website/server directory and `npm install`                  |
+| [Install Python dependencies]                                                                                            | navigate to the Project directory and `pip install -r requirements-full.txt` |
+| nbsp;                                                                                                                    |
 
-### Become a Contributor
+### Running this Project locally
 
-* More information on our [CONTRIBUTING GUIDELINES](/CONTRIBUTING.md).
+- locate the config.json file within the website/server folder and replace the PATHS accordingly to your environemnts and file paths
+  for example wherever your openbb python env is located change: `"pythonPath": "PATH_TO_YOUR_PYTHON_ENVOIRNEMENT/obb/python.exe",`
+  to `"pythonPath":"C:/ProgramData/Anaconda3/envs/obb/python.exe"`
+- cd into website/ and run this command: ` npm-run-all -p start-server start` to run the webapp
+  this will launch the webapp in production as it utilizes nodemon if you make any changes in the code the server will restart automatically
+  if you want to ignore some files you need to locate the nodemon.json file within the server directory and at the file you wish to ignore in the list!
+- you need to have your own [NEWS API KEY](https://docs.openbb.co/terminal/usage/guides/api-keys) if you have one best set them directly in the terminal
 
-### Create a GitHub ticket
+### NOTE THIS PROJECT IS A WORK IN PROGRESS AND THERFORE NOT STABLE!
 
-Before creating a ticket make sure the one you are creating doesn't exist already [here](https://github.com/OpenBB-finance/OpenBBTerminal/issues)
+There might be some bugs here and there , aswell as some features are still in planning some known issues:
 
-* [Report bug](https://github.com/OpenBB-finance/OpenBBTerminal/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBug%5D)
-* [Suggest improvement](https://github.com/OpenBB-finance/OpenBBTerminal/issues/new?assignees=&labels=enhancement&template=enhancement.md&title=%5BIMPROVE%5D)
-* [Request a feature](https://github.com/OpenBB-finance/OpenBBTerminal/issues/new?assignees=&labels=new+feature&template=feature_request.md&title=%5BFR%5D)
+- the NEWS_TOKEN_API key must be set by you either in the .env file or best via openbb terminal [NEWS API KEY GUIDE](https://docs.openbb.co/terminal/usage/guides/api-keys)
+- as this project currently doesnt use any local storage nor a backend databse at the moment
+  all data is lost if you close a session
+- the loading time may take a while and there might be some retries if a api call made an error so be patient or refresh the page
+- the results a single stored in json files , so each new api call overwrites the current json result so each api call and result
+  will be made on the fly(will change if i integrate a database and call the apis from the server beforehand)
+- sometimes the table wont collapse and you cant see the holdings of the etf just refresh the page
 
 ### Provide feedback
 
-We are most active on [our Discord](https://openbb.co/discord), but feel free to reach out to us in any of [our social media](https://openbb.co/links) for feedback.
+The team of openbb and iam most active on [our Discord](https://openbb.co/discord), feel free to reach out to us for feedback.
 
-## 3. License
-
-Distributed under the MIT License. See
-[LICENSE](https://github.com/OpenBB-finance/OpenBBTerminal/blob/main/LICENSE) for more information.
-
-## 4. Disclaimer
+## 3. Disclaimer
 
 Trading in financial instruments involves high risks including the risk of losing some, or all, of your investment
 amount, and may not be suitable for all investors.
@@ -121,21 +130,7 @@ OpenBB and any provider of the data contained in this website will not accept li
 All names, logos, and brands of third parties that may be referenced in our sites, products or documentation are trademarks of their respective owners. Unless otherwise specified, OpenBB and its products and services are not endorsed by, sponsored by, or affiliated with these third parties.
 Our use of these names, logos, and brands is for identification purposes only, and does not imply any such endorsement, sponsorship, or affiliation.
 
-## 5. Contacts
-
-If you have any questions about the terminal or anything OpenBB, feel free to email us at `support@openbb.co`
-
-If you want to say hi, or are interested in partnering with us, feel free to reach us at `hello@openbb.co`
-
-Any of our social media platforms: [openbb.co/links](https://openbb.co/links)
-
-## 6. Star History
-
-This is a proxy of our growth and that we are just getting started. But for more metrics important to us check [openbb.co/open](https://openbb.co/open).
-
-[![Star History Chart](https://api.star-history.com/svg?repos=openbb-finance/OpenBBTerminal&type=Date)](https://star-history.com/#openbb-finance/OpenBBTerminal&Date)
-
-## 7. Contributors
+## Contributors
 
 OpenBB wouldn't be OpenBB without you. If we are going to disrupt financial industry, every contribution counts. Thank you for being part of this journey.
 

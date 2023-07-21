@@ -1,0 +1,9 @@
+{
+    "pythonPath": "PATH_TO_YOUR_PYTHON_ENVOIRNEMENT/obb/python.exe",
+    "etfGatewayPath": "YOUR_PATH/OpenBBTerminal/website/server/etf_openbb_gateway.py",
+    "etfResultFile": "YOUR_PATH/OpenBBTerminal/website/server/etf_sector_results.json",
+    "etfHoldingsResultFile":"YOUR_PATH/OpenBBTerminal/website/server/etf_holdings_results.json",
+    "newsResultFile":"YOUR_PATH/OpenBBTerminal/website/server/news_result.json",
+    "overviewResultFile":"YOUR_PATH/OpenBBTerminal/website/server/overview.json"
+}
+  
